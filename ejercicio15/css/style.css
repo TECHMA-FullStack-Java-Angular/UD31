@@ -1,0 +1,29 @@
+#contenedor-imagenes {
+
+    float: left;
+    width: 30%;
+  }
+  
+  .miniatura {
+    width: 25%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #visor-imagen {
+
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+   
+  }
+  
+  #imagen-grande {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  #pie-foto {
+    font-style: italic;
+    text-align: center;
+  }
