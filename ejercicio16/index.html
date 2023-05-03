@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Ejercicio 16</h1>
+    <p>
+      En primer lugar crearemos mediante el código HTML y CSS un recuadro en el
+      que quepan dos cifras para las horas, otras dos para los minutos y otras
+      dos para los segundos; cada grupo de dos cifras van separadas: aquí
+      pondremos el signo de dos puntos y unos espacios para separarlos.
+    </p>
+    <p>
+      Después mediante javascript buscamos la hora en el reloj interno del
+      ordenador, para ello javascript posee el objeto Date (), mediante el cual
+      podemos saber la hora actual del ordenador. Mediante los diferentes
+      métodos de este objeto extraemos la hora, los minutos y los segundos.
+    </p>
+    <p>
+      El objeto Date() nos dará la hora del momento en el que éste es llamado,
+      normalmente al cargarse la página o realizar un evento. Sin embargo
+      queremos que éste se actualice a cada segundo para poder tener un reloj en
+      marcha. Para ello debemos utilizar un temporizador que a cada segundo
+      busque de nuevo este objeto y lo devuelva a la página.
+    </p>
+
+    <h2>Reloj con javascript</h2>
+    <div id="reloj">
+      <span id="horas">00</span> : <span id="minutos">00</span> :
+      <span id="segundos">00</span>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
