@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <p>
+      Pretendemos crear un cuadro o banner que nos muestre una calculadora
+      parecida a una sencilla calculadora de bolsillo. nos fijamos como ejemplo
+      en la calculadora que viene con en el sistema operativo windows o en
+      alguna parecida.
+    </p>
+    <p>
+      El recuadro o banner de la calculadora debe distinguirse del resto de la
+      página, debe tener una "pantalla" donde ver los números que vamos
+      escribiendo y los resultados, y unos botones o teclas con los números,
+      operaciones, y otros elementos que hay en una calculadora normal.
+    </p>
+    <p>
+      La calculadora debe resolver las operaciones aritméticas que se planteen.
+      pàra ello además de usar los botones mediante un click de ratón, debemos
+      poder usar el teclado para escribir y resolver las operaciones.
+    </p>
+
+    <div class="container">
+        <input type="text" id="result" class="screen" />
+        
+
+        <div class="keys">
+            <input type="button" value="Retr" onclick="backspace()" class="btn_" />
+            <input type="button" value="CE" onclick="clearEntry()" class="btn_" />
+            <input type="button" value="C" onclick="clearScreen()" class="btn_" />
+            <input type="button" value="7" class="btn" onclick="display('7')" />
+            <input type="button" value="8" class="btn" onclick="display('8')" />
+            <input type="button" value="9" class="btn" onclick="display('9')" />
+
+            <input type="button" value="/" class="operator" onclick="display('/')" />
+            <input type="button" value="&radic;x" class="btn" onclick="square()" />
+            <input type="button" value="4" class="btn" onclick="display('4')" />
+            <input type="button" value="5" class="btn" onclick="display('5')" />
+            <input type="button" value="6" class="btn" onclick="display('6')" />
+
+            <input type="button" value="*" class="operator" onclick="display('*')" />
+            <input type="button" value="%" class="operator" onclick="percent()" />
+            <input type="button" value="1" class="btn" onclick="display('1')" />
+            <input type="button" value="2" class="btn" onclick="display('2')" />
+            <input type="button" value="3" class="btn" onclick="display('3')" />
+
+            <input type="button" value="-" class="operator" onclick="display('-')" />
+            <input type="button" value="x&#8315;&#185;" class="operator" onclick="reciprocal()" />
+            <input type="button" value="0" class="btn" onclick="display('0')" />
+
+            <input type="button" value="+/-" class="operator" onclick="round()" />
+            <input type="button" value="." class="operator" onclick="display('.')" />
+            <input type="button" value="=" class="btn" onclick="solve()" />
+            <input type="button" value="+" class="operator" onclick="display('+')" />
+        </div>
+    </div>
+      
+
+      <script src="./js/script.js"></script>
+  </body>
+</html>
