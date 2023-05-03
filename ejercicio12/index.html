@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicio 12</h1>
+    <p>
+      Crear las expresiones regulares necesarias para resolver los siguientes
+      puntos:
+    </p>
+    <ul>
+      <li>
+        Crear una expresión regular valide una fecha en formato "XX/XX/XXXX",
+        donde "X" es un dígito. Probarlo con la expresión: "Nací el 05/04/1982
+        en Donostia.".
+      </li>
+      <li>
+        Crear una expresión regular que valide una dirección de email. Para
+        simplificar, los valores antes de la @ pueden contener cualquier
+        carácter alfanumérico, y los caracteres . y -, mientras que los valores
+        tra la @ pueden contener caracteres alfanuméricos, y el tipo de dominio
+        puede tener una longitud de 2 o 3 caracteres.
+      </li>
+      <li>
+        Dada la siguiente función que de reemplazo de caracteres, reescribirla
+        utilizando expresiones regulares.
+        <img src="./images/function.jpg" alt="funcion" width="50%" />
+
+        <pre><code>let prueba = "&lt;p&gt;Este es un ejemplo de texto con caracteres especiales: &amp; ' &quot; &lt; &gt;&lt;/p&gt;";
+            console.log(escapeHTML(prueba));</code></pre>
+            
+      </li>
+      <li>
+        Dados un nombre y un apellido, crear la expresión regular necesaria
+        para mostrarlos en orden inverso y separados por una coma. Por ejemplo,
+        la cadena "John Smith", convertirla en "Smith, John".
+      </li>
+      <li>
+        Crear una expresión regular que elimine las etiquetas potencialmente
+        peligrosas (&lt;script&gt;...&lt;/script&gt) y todo su contenido de una
+        cadena HTML.
+        <pre><code>const htmlString = "&lt;script&gt;alert('Hola Mundo');&lt;/script&gt;&lt;p&gt;Este es un párrafo&lt;/p&gt;";
+            console.log(safeHtmlString);</code></pre>
+      </li>
+    </ul>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
